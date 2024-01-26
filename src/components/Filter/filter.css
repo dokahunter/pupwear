@@ -1,0 +1,5 @@
+.form-floating{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color:gray
+}

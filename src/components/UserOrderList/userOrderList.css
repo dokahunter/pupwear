@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.accordion {
+    margin-bottom: 1em;
+}

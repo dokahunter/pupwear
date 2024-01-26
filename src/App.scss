@@ -1,0 +1,38 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+$primary: #98D8AA;
+$danger: #FF6D60;
+$nav-link-color:  black;
+$nav-link-hover-color: gray;
+$link-color: black;
+$link-hover-color: gray;
+$pagination-active-color: black;
+$pagination-active-bg: #98D8AA;
+$pagination-active-border-color: #98D8AA;
+$accordion-button-active-bg: $yellow-100;
+$dropdown-link-active-bg: $gray-100;
+$dropdown-link-active-color: black;
+$input-focus-border-color: #548C64;
+$form-select-focus-border-color: #548C64;
+
+$theme-colors: map-merge($theme-colors, (
+  "primary": $primary,
+  "danger": $danger,
+));
+  
+  @import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
+  
+  .w-1 {
+    width: 1%;
+  }
+  
+  .main-style {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .fill {
+    height: 100%;
+}
+
+  @import "~bootstrap/scss/bootstrap";

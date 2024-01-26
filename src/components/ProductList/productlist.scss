@@ -1,0 +1,80 @@
+@import "../../App.scss";
+
+.card {
+    padding: .7rem,
+}
+.card-img-top {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px;
+    padding-top: .5rem;
+}
+.card-text {
+    overflow: hidden;
+}
+.card-title {
+    font-weight: bold;
+}
+.card-subtitle {
+    position: absolute;
+    bottom: 3.4rem
+}
+.btn-container {
+    text-align: center;
+}
+.card-btn {
+    position: absolute;
+    bottom: .7rem;
+    left: 50%;
+    transform: translateX(-50%)  ;
+}
+.productLink {
+    text-decoration: none;
+    color: var(--bs-card-title-color);
+}
+
+@include media-breakpoint-down(md) {
+    .card-subtitle {
+        position: revert;
+        bottom: revert;
+    }
+    .card-btn {
+        position: revert;
+        left: revert;
+        transform: revert; 
+    }
+}
+@include media-breakpoint-up(md) {
+    .card {
+        height: 22rem !important;
+    };
+    .card-text {
+        height: 70%
+    };
+    .card-title {
+        font-size: 1.1rem;
+    };
+    .card-subtitle {
+        font-size: .9rem;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .card {
+        height: 24rem !important;;
+    }
+}
+@include media-breakpoint-up(xl) {
+    .card {
+        height: 26rem !important;
+    }
+}
+@include media-breakpoint-up(xxl) {
+    .card {
+        height: 29rem !important;;
+    }
+}

@@ -1,0 +1,15 @@
+@import "../../App.scss";
+
+.navbar {
+    background-color: $yellow-300;
+}
+
+.navbar-right {
+    gap: 1em;
+    align-items: center;
+}
+
+.navbar-left {
+    justify-content: flex-start;
+    gap: 2.5em;
+}
